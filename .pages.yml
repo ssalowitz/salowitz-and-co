@@ -1,0 +1,63 @@
+# Pages CMS configuration for Salowitz & Co.
+media:
+  input: media
+  output: /media
+  rename: safe
+  extensions: [jpg, jpeg, png, webp]
+content:
+  - name: site
+    label: Homepage & Contact
+    type: file
+    path: content/site.json
+    format: json
+    operations:
+      delete: false
+    fields:
+      - { name: business_name, label: Business name, type: string, required: true }
+      - { name: tagline, label: Main headline, type: string }
+      - { name: subtitle, label: Service subtitle, type: string }
+      - { name: service_area, label: Service area, type: string }
+      - { name: intro, label: Homepage introduction, type: text }
+      - { name: about_title, label: About section heading, type: string }
+      - { name: about, label: About Harris, type: text }
+      - { name: contact_email, label: Contact email, type: string, description: "Only change when the new mailbox is ready." }
+  - name: services
+    label: Services
+    type: file
+    path: content/services.json
+    format: json
+    list: true
+    operations:
+      delete: false
+    fields:
+      - { name: title, label: Service name, type: string, required: true }
+      - { name: description, label: Description, type: text }
+      - { name: icon, label: Emoji icon, type: string }
+      - { name: visible, label: Show on website, type: boolean }
+  - name: projects
+    label: Project Photos
+    type: file
+    path: content/projects.json
+    format: json
+    list: true
+    operations:
+      delete: false
+    fields:
+      - { name: title, label: Project title, type: string, required: true }
+      - { name: description, label: Description, type: text }
+      - { name: before_image, label: Before photo, type: image }
+      - { name: after_image, label: After photo, type: image }
+      - { name: visible, label: Show on website, type: boolean }
+  - name: reviews
+    label: Approved Reviews
+    type: file
+    path: content/reviews.json
+    format: json
+    list: true
+    operations:
+      delete: false
+    fields:
+      - { name: name, label: Customer display name, type: string, description: "First name only, with permission." }
+      - { name: quote, label: Review text, type: text }
+      - { name: rating, label: Rating (1 to 5), type: number }
+      - { name: visible, label: Approved for publication, type: boolean }
