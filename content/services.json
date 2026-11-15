@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Lawn & Yard Care",
+    "description": "Lawn mowing, weeding, leaf cleanup, and general seasonal yard work.",
+    "icon": "🌿",
+    "visible": true
+  },
+  {
+    "title": "Handyman Help",
+    "description": "Furniture assembly, simple repairs, organization, and small projects within my experience.",
+    "icon": "🛠️",
+    "visible": true
+  },
+  {
+    "title": "Light Mechanical",
+    "description": "Basic vehicle-related tasks such as replacing wiper blades and other simple jobs by agreement.",
+    "icon": "🚗",
+    "visible": true
+  },
+  {
+    "title": "Household Tasks",
+    "description": "Garage cleanup, carrying boxes, organizing, and everyday chores.",
+    "icon": "🏠",
+    "visible": true
+  }
+]
