@@ -3,6 +3,6 @@
     "title": "Test Lawn Care Project",
     "description": "Testing the Salowitz & Co. project gallery",
     "before_image": "/media/7673.jpg",
-    "visible": false
+    "visible": true
   }
 ]
